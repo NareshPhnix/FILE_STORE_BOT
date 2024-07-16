@@ -6,40 +6,40 @@
     "file",
     "sharing"
   ],
-  "repository": "https://github.com/CodeXBotz/File-Sharing-Bot",
+  "repository": "https://github.com/NareshPhnix/FILE_STORE_BOT/tree/main",
   "logo": "https://ibb.co/FgPVtzw",
   "env": {
     "TG_BOT_TOKEN": {
       "description": "Your Bot token, Get it from @Botfather",
-      "value": ""
+      "value": "7136238408:AAFyHLlJlzwjHvz-aS4Naa1dauxcSU9mfKk"
     },
     "OWNER_ID": {
       "description": "An integer of consisting of your owner ID",
-      "value": "1250450587"
+      "value": "1676244457"
     },
-    "APP_ID":{
+    "API_ID":{
       "description": "your app id, take it from my.telegram.org",
-      "value": ""
+      "value": "28192191"
     },
     "DATABASE_URL": {
       "description": "Paste your mongo db url",
-      "value": "url"
+      "value": "mongodb+srv://phoenix:Mongo.12345nht@cluster123.1mvajso.mongodb.net/?retryWrites=true&w=majority&appName=cluster123"
     },
     "DATABASE_NAME":{
       "description": "Enter your DATABASE_NAME ",
-      "value": "filesharexbot"
+      "value": "phoenix"
     },
     "API_HASH":{
       "description": "your api hash, take it from my.telegram.org",
-      "value": ""
+      "value": "663164abd732848a90e76e25cb9cf54a"
     },
     "CHANNEL_ID":{
       "description": "make a channel (database channel), then make the bot as admin in channel, and it's id",
-      "value": "-100"
+      "value": "-1002225691244"
     },
     "FORCE_SUB_CHANNEL":{
       "description": "id of the channel or group, if you want enable force sub feature else put 0",
-      "value": "0"
+      "value": "-1002169329841"
     },
     "START_MESSAGE": {
       "description": "Optional: start message of bot, use HTML parsemode format",
