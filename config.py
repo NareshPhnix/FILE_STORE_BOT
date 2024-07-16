@@ -6,7 +6,9 @@
 import os
 import logging
 from logging.handlers import RotatingFileHandler
-from config import API_HASH, API_ID, LOGGER, TG_BOT_TOKEN, TG_BOT_WORKERS, FORCE_SUB_CHANNEL, CHANNEL_ID, PORT
+def some_function():
+    from config import API_HASH, API_ID, LOGGER, TG_BOT_TOKEN, TG_BOT_WORKERS, FORCE_SUB_CHANNEL, CHANNEL_ID, PORT
+    # Use the imported variables here
 
 
 
