@@ -10,19 +10,19 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7136238408:AAFyHLlJlzwjHvz-aS4Naa1dauxcSU9mfKk")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", 7136238408:AAFyHLlJlzwjHvz-aS4Naa1dauxcSU9mfKk)
 
 #Your API ID from my.telegram.org
-API_ID = int(os.environ.get("API_ID", "28192191"))
+API_ID = int(os.environ.get("API_ID",28192191))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "663164abd732848a90e76e25cb9cf54a")
+API_HASH = os.environ.get("API_HASH",663164abd732848a90e76e25cb9cf54a)
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002225691244"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID",-1002225691244))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "1676244457"))
+OWNER_ID = int(os.environ.get("OWNER_ID",1676244457))
 
 #Port
 PORT = os.environ.get("PORT", "8080")
@@ -32,7 +32,7 @@ DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://phoenix:Mongo.12345nht@cl
 DB_NAME = os.environ.get("DATABASE_NAME", "phoenix")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002169329841"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL",-1002169329841))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
@@ -40,7 +40,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "1676244457").split()):
+    for x in (os.environ.get("ADMINS",1676244457).split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
@@ -50,7 +50,7 @@ FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {first}\n\n<b>You need to
 
 #set your Custom Caption here, Keep None for Disable Custom Caption
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
-
+/
 #set True if you want to prevent users from forwarding files from bot
 PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" else False
 
